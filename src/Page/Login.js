@@ -10,7 +10,7 @@ export const Login = () => {
               <input id="username" type="text" placeholder="이메일 또는 전화번호" class="username w-full p-2 border rounded">
             </div>
             <div class="mb-6">
-              <input type="password" autocomplete="cc-number" placeholder="비밀번호" class="w-full p-2 border rounded">
+              <input id="pw" type="password" autocomplete="cc-number" placeholder="비밀번호" class="w-full p-2 border rounded">
             </div>
             <button type="submit" id="submit" class="w-full bg-blue-600 text-white p-2 rounded font-bold">로그인</button>
           </form>
@@ -36,13 +36,15 @@ export const Login = () => {
 
     checkLoginUserAccessToLoginPage();
 
+    const userNameInput = document.querySelector('#username')
+
     const setLoginSubmitButtonTappedEvent = () => {
         const loginForm = document.getElementById('login-form');
         if (loginForm) {
             loginForm.addEventListener('submit', function (e) {
                 e.preventDefault();
                 const user = {
-                    username: 'testuser',
+                    username: userNameInput.value,
                     email: '',
                     bio: '',
                 };
