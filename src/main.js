@@ -12,7 +12,7 @@ window.addEventListener('error', (event) => {
 
 const router = new Router();
 
-router.addRoute('/', () => Home());
-router.addRoute('/profile', () => Profile());
-router.addRoute('/login', () => Login());
+router.addRoute('/', Home);
+router.addRoute('/profile', Profile);
+router.addRoute('/login', Login);
 router.init();
