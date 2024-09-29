@@ -1,4 +1,4 @@
-export const Error = () => {
+export const NotFound = () => {
 
     document.querySelector('#root').innerHTML = `
   <body>
