@@ -1,10 +1,7 @@
 import { goTo } from '../Util/util';
 
 export const Login = () => {
-
     document.querySelector('#root').innerHTML = `
-  <body>
-    <div id="root">
       <main class="bg-gray-100 flex items-center justify-center min-h-screen">
         <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
           <h1 class="text-2xl font-bold text-center text-blue-600 mb-8">항해플러스</h1>
@@ -27,8 +24,6 @@ export const Login = () => {
           <div id="error-message"></div>
         </div>
       </main>
-    </div>
-  </body>
   `;
 
     const checkLoginUserAccessToLoginPage = () => {

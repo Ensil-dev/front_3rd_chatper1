@@ -5,8 +5,6 @@ import { goTo, setNavElemTapped } from '../Util/util';
 
 export const Profile = () => {
     document.querySelector('#root').innerHTML = `
-<body>
-<div id="root">
   <div class="bg-gray-100 min-h-screen flex justify-center">
     <div class="max-w-md w-full">
       ${Header()}
@@ -44,8 +42,6 @@ export const Profile = () => {
       ${Footer()}
     </div>
   </div>
-</div>
-</body>
   `;
 
     setNavElemTapped();
