@@ -1,5 +1,6 @@
 import { Footer } from '../Layout/Footer';
 import { Header } from '../Layout/Header';
+import { Routes } from '../Router/Routes';
 import { setLogoutButtonTappedEvent } from '../Util/uiControl';
 import { goTo, setNavElemTapped } from '../Util/util';
 
@@ -8,16 +9,7 @@ export const Profile = () => {
   <div class="bg-gray-100 min-h-screen flex justify-center">
     <div class="max-w-md w-full">
       ${Header()}
-      <nav class="bg-white shadow-md p-2 sticky top-14">
-        <ul class="flex justify-around">
-            <li><a href="/" class="text-gray-600">홈</a></li>
-            <li><a id="profile" href="/profile" class="hidden text-blue-600">프로필</a></li>
-            <li>
-              <a id="login"  href="/login" class="text-gray-600">로그인</a>
-              <button id="logout" class="hidden text-gray-600">로그아웃</button>
-            </li>
-        </ul>
-      </nav>
+      ${Routes()}
 
       <main class="p-4">
         <div class="bg-white p-8 rounded-lg shadow-md">
