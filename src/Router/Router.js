@@ -1,5 +1,3 @@
-import { Error } from '../Page/Error';
-
 export class Router {
     constructor() {
         this.routes = {};
@@ -24,13 +22,12 @@ export class Router {
         if (handler) {
             handler();
         } else {
-            Error();
+            throw new Error('404-not-found')
         }
     }
 
     init() {
         window.addEventListener('hashchange', () => {
-            const path = window.location.hash.slice(1) || '/';
             this.handleRoute(path);
         });
 
