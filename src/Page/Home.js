@@ -1,6 +1,6 @@
-import { Footer } from '../Layout/Footer';
-import { Header } from '../Layout/Header';
-import { Posts } from '../Layout/Posts';
+import { Footer } from '../Layout/Footer/Footer';
+import { Header } from '../Layout/Header/Header';
+import { Posts } from '../Layout/Post/Posts';
 import { Routes } from '../Router/Routes';
 import { changeVisibilityBasedOnLoginStatus, setLogoutButtonTappedEvent } from '../Util/uiControl';
 import { setNavElemTapped } from '../Util/util';

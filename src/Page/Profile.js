@@ -1,5 +1,5 @@
-import { Footer } from '../Layout/Footer';
-import { Header } from '../Layout/Header';
+import { Footer } from '../Layout/Footer/Footer';
+import { Header } from '../Layout/Header/Header';
 import { Routes } from '../Router/Routes';
 import { setLogoutButtonTappedEvent } from '../Util/uiControl';
 import { goTo, setNavElemTapped } from '../Util/util';
